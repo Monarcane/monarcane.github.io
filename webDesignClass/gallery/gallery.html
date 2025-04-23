@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="arcaneOriginal.png" />
-        <title>Red Panda Gallery</title>
+        <title>Team Page</title>
         <style>
           @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
           *{
@@ -13,7 +13,7 @@
               box-sizing:border-box;
               font-family:'Poppins',sans-serif;
               color:white;
-              font-size:14px;
+              font-size:16px;
           }
           body{
               background:black;
@@ -23,35 +23,92 @@
           a:link {
               text-decoration: none;
           }
+          .member{
+            margin:auto;
+            width:800px;
+            height:200px;
+            border-radius:25px;
+            background-color: rgb(25, 24, 32);
+            overflow: hidden;
+            margin-top:25px;
+          }
+          .member #pad{
+            padding: 15px 25px;
+            width:800px;
+            height:200px;
+          }
+          .images{
+            float:left;
+            border-radius:10px;
+          }
+          .color{
+            position:relative;
+            width:800px;
+            height:10px;
+          }
+          .color#e{
+            background-image: linear-gradient(to right, rgb(255, 0, 30) , rgb(127, 0, 150));
+          }
+          .color#r{
+            background-image: linear-gradient(to right, rgb(0, 60, 255) , rgb(0, 179, 250));
+          }
+          .color#c{
+            background-image: linear-gradient(to right, rgb(255, 0, 157) , rgb(225, 0, 255));
+          }
+          .color#d{
+            background-image: linear-gradient(to right, rgb(255, 140, 0) , rgb(248, 178, 0));
+          }
           h1{
-            font-size:20px;
-            text-align: center;
+            font-size:16pt;
           }
           h2{
+            font-size:22pt;
             text-align: center;
           }
-            table{
-                margin:auto;
-                width:80%;
-            }
+          h3, p{
+            text-align: center;
+          }
         </style>
     </head>
     <body>
-        Logan Klinedinst
-        <h1>RED PANDAS</h1>
-      <table>
-        <tr>
-          <td><img src="sit.jpg" alt="sit" height="200px"/></td>
-          <td><img src="sleepy.jpg" alt="sleepy" height="200px"/></td>
-          <td><img src="pounce.jpg" alt="pounce" height="200px"/></td>
-          <td><img src="wave.jpg" alt="wave" height="200px"/></td>
-        </tr>
-        <tr>
-          <td><a href="https://commons.wikimedia.org/wiki/File:Red_Panda_%2825193861686%29.jpg" target="_blank" rel="noopener noreferrer">original</a><br/><a href="https://www.flickr.com/people/91501748@N07" target="_blank" rel="noopener noreferrer">photographer: Mathias Appel</a></td>
-          <td><a href="https://commons.wikimedia.org/wiki/File:Sleeping_Red_Panda_at_the_Toledo_Zoo.jpg" target="_blank" rel="noopener noreferrer">original</a><br/><a href="https://commons.wikimedia.org/wiki/User:DreamingKoala" target="_blank" rel="noopener noreferrer">photographer: DreamingKoala</a></td>
-          <td><a href="https://commons.wikimedia.org/wiki/File:Red_Pandas_playing.jpg" target="_blank" rel="noopener noreferrer">original</a><br/><a href="https://www.flickr.com/people/24152400@N08" target="_blank" rel="noopener noreferrer">photographer: The Meat Case</a></td>
-          <td><a href="https://commons.wikimedia.org/wiki/File:Red_Panda_Face.jpg" target="_blank" rel="noopener noreferrer">original</a><br/><a href="https://www.flickr.com/people/24152400@N08" target="_blank" rel="noopener noreferrer">photographer: The Meat Case</a></td>
-        </tr>
-      </table>
+        <h2>THE UNIVERSALS</h2>
+        <div class="member">
+            <div class="color" id="e"></div>
+            <div id="pad">
+                <img src="e.png" alt="eclipse" width="150px" class="images">
+                <br/><h1>&ensp;&ensp;ECLIPSE FLYNN</h1>
+                &ensp;&ensp;&ensp;Their leader. Passionate and noble woman responsible for the final shot &ensp;&ensp;&ensp;at Dexterity.
+                <br/>&ensp;&ensp;&ensp;Lost in service.
+            </div>
+        </div>
+        <div class="member">
+            <div class="color" id="r"></div>
+            <div id="pad">
+              <img src="r.png" alt="ronan" width="150px" class="images">
+              <br/><h1>&ensp;&ensp;RONAN MILLS</h1>
+              &ensp;&ensp;&ensp;Agile and precise strategist, took advantage of opportunities opened by &ensp;&ensp;&ensp;his teammates to do crutial damage.
+              <br/>&ensp;&ensp;&ensp;Retired.
+            </div>
+        </div>
+        <div class="member">
+            <div class="color" id="c"></div>
+            <div id="pad">
+              <img src="c.png" alt="camila" width="150px" class="images">
+              <br/><h1>&ensp;&ensp;CAMILA NORRIS</h1>
+              &ensp;&ensp;&ensp;Light and nimble illusionist, responsible for distracting and pressuring &ensp;&ensp;&ensp;enemies.
+              <br/>&ensp;&ensp;&ensp;Retired.
+            </div>
+        </div>
+        <div class="member">
+            <div class="color" id="d"></div>
+            <div id="pad">
+              <img src="d.png" alt="damien" width="150px" class="images">
+              <br/><h1>&ensp;&ensp;DAMIEN CAMPOS</h1>
+              &ensp;&ensp;&ensp;Brute-like heavy-hitter, responsible for applying the most damage to &ensp;&ensp;&ensp;enemies.
+              <br/>&ensp;&ensp;&ensp;Lost in service.
+            </div>
+        </div>
+        <br/><h3>LINKS</h3>
+        <p><a href="" target="_blank" rel="noopener noreferrer">DEXTERITY&ensp;&ensp;&ensp;&ensp;DEMIPOWER</a></p>
     </body>
 </html>
