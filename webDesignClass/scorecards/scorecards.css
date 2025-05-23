@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    font-size:16px;
+}
+body{
+    background:black;
+    background-size:10%;
+    padding:100px;
+}
+a:link {
+    text-decoration: none;
+}
+.menu{
+    display: grid;
+    grid-template-areas:
+        "basketball soccer baseball";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin:auto;
+    width:300px;
+    text-align: center;
+}
+a{transition: 0.2s;}
+.menu#basketball{grid-area: basketball;}
+.menu#soccer{grid-area: soccer;}
+.menu#baseball{grid-area: baseball;}
+.menu a:hover{color:rgb(182, 182, 182)}
+table{
+    width:600px;
+    margin:auto;
+    padding:25px 5px;
+    border-radius:25px;
+    table-layout: fixed;
+    text-align: center;
+}
+table#basketball{outline:2px solid #df4e0b}
+table#soccer{outline:2px solid #25b907}
+table#baseball{outline:2px solid #0e0bdf}
+td, th{
+    width: auto;
+    transition: 0.2s;
+}
+td:hover, th:hover{
+    font-size:19px;
+}
+tr:nth-of-type(even) td{
+    background-color:rgb(19, 19, 19)
+}
