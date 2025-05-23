@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="arcaneOriginal.png" />
+        <title>Team Page</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family:'Poppins',sans-serif;
+                color:white;
+                font-size:16px;
+            }
+            body{
+                background:black;
+                background-size:10%;
+                padding:100px;
+            }
+            a:link {
+                text-decoration: none;
+            }
+            .container {
+                display: grid;
+                grid-template-areas:
+                    "header header"
+                    "subheader puzzle";
+                grid-template-columns: 1fr 3fr;
+                gap: 10px;
+                background-color: #090a0e;
+                padding: 20px;
+                width:1250px;
+                margin:auto;
+                text-align: center;
+                border-radius:25px;
+            }
+            .container > div {
+                background-color: rgb(27, 26, 39);
+                padding: 50px;
+                border-radius:25px;
+            }
+            .container > div.header {
+                grid-area: header;
+                outline:2px solid #10238f;
+            }
+            .container > div.subheader {
+                grid-area: subheader;
+                height:130px;
+                outline:2px solid #10608f;
+            }
+            .container > div.puzzle {
+                grid-area: puzzle;
+                outline:2px solid #47108f;
+            }
+            .flexbox {
+                display: flex;
+                flex-wrap: wrap;
+
+                #A{order:5}
+                #B{order:8}
+                #C{display:none}
+                #D{order:6}
+                #E{order:3}
+                #F{order:9; border-radius:0 0 0 25px;}
+                #G{order:4; border-radius:0 25px 0 0;}
+                #H{order:11}
+                #I{order:12; border-radius:0 0 25px 0;}
+                #J{order:10}
+                #K{order:1; border-radius:25px 0 0 0;}
+                #L{order:7}
+                #M{order:2}
+            }
+            h2{
+                font-size:18pt;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"><h2>Logan Klinedinst - Snowman Puzzle</h2></div>
+            <div class="subheader"><h4>5/21/2025</h4></div>
+            <div class="puzzle"><div class="flexbox">
+                <img src="4.4_puzzle2/puzzle2_A.jpg" alt="A" id="A" width="200px">
+                <img src="4.4_puzzle2/puzzle2_B.jpg" alt="B" id="B" width="200px">
+                <img src="4.4_puzzle2/puzzle2_C.jpg" alt="C" id="C" width="200px"> 
+                <img src="4.4_puzzle2/puzzle2_D.jpg" alt="D" id="D" width="200px">
+                <img src="4.4_puzzle2/puzzle2_E.jpg" alt="E" id="E" width="200px">
+                <img src="4.4_puzzle2/puzzle2_F.jpg" alt="F" id="F" width="200px">  
+                <img src="4.4_puzzle2/puzzle2_G.jpg" alt="G" id="G" width="200px">
+                <img src="4.4_puzzle2/puzzle2_H.jpg" alt="H" id="H" width="200px">
+                <img src="4.4_puzzle2/puzzle2_I.jpg" alt="I" id="I" width="200px">
+                <img src="4.4_puzzle2/puzzle2_J.jpg" alt="J" id="J" width="200px">  
+                <img src="4.4_puzzle2/puzzle2_K.jpg" alt="K" id="K" width="200px">
+                <img src="4.4_puzzle2/puzzle2_L.jpg" alt="L" id="L" width="200px">
+                <img src="4.4_puzzle2/puzzle2_M.jpg" alt="M" id="M" width="200px">
+            </div></div>
+        </div>
+    </body>
+</html>
