@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    color:rgb(255, 255, 255);
+    font-size:16px;
+}
+body{
+    background:rgb(219, 219, 219);
+    background-size:10%;
+    padding:100px;
+}
+a:link {
+    text-decoration: none;
+}
+div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin:auto;
+    text-align: center;
+    width:920px;
+}
+img#penguin{
+    -webkit-filter: sepia(50%);
+    filter: sepia(50%);
+    border-radius: 50%;
+    outline:1px solid #000000
+}
+img#ticfield{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border: 35px solid #000;
+    border-image: url(images/tic-tac-toe.png) 50 round;
+}
+img#dino{
+    -webkit-filter: hue-rotate(90deg) drop-shadow(5px 0px 2px #000000);
+    filter: hue-rotate(90deg) drop-shadow(5px 0px 2px #000000);
+}
+img#seagull{
+    background-image: linear-gradient(to bottom right, #6f68d8, #fff);
+    -webkit-filter: drop-shadow(0px 10px 2px #00000034);
+    filter: box-shadow(0px 10px 2px #00000034);
+}
+img#butterfly{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    border-radius: 100px 0 100px 0;
+    opacity:65%;
+}
+div#present{
+    width:200px;
+    height:176px;
+    background-image: url(images/theater_stage.jpg);
+    background-size:100% 100%;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+div#text{
+    position:absolute;
+    font-size:22px;
+    -webkit-filter: drop-shadow(5px 0px 2px #000000);
+    filter: drop-shadow(2px 2px 2px #000000);
+    padding-top:70px;
+}
