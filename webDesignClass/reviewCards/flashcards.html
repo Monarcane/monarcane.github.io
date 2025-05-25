@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flashcards</title>
+        <link rel="stylesheet" type="text/css" href="flashcards.css">
+    </head>
+    <body>
+        <h1>Filmmaking Terms</h1><br/>
+        <div class="cards">
+            <div class="selector"><div class="flashcard" id="1">
+                <div class="front">C-Stand</div>
+                <div class="back">A robust, metal stand commonly used in film and photography to support various equipment, especially for positioning lights, light modifiers like flags and silks, and backdrops.</div>
+            </div></div>
+            <div class="selector"><div class="flashcard" id="2">
+                <div class="front">Tripod</div>
+                <div class="back">A three-legged stand for supporting a camera or other apparatus.</div>
+            </div></div>
+            <div class="selector"><div class="flashcard" id="3">
+                <div class="front">Gimble</div>
+                <div class="back">A device that stabilizes a camera, especially during handheld shooting, by counteracting movement and vibrations to produce smooth, steady footage.</div>
+            </div></div>
+            <div class="selector"><div class="flashcard" id="4">
+                <div class="front">Deadcat</div>
+                <div class="back">A synthetic fur cover for microphones that blocks wind from hitting the microphone, reducing wind noise in the recording.</div>
+            </div></div>
+            <div class="selector"><div class="flashcard" id="5">
+                <div class="front">A-Roll</div>
+                <div class="back">This is the core footage, including the main action, dialogue, and key plot points.</div>
+            </div></div>
+            <div class="selector"><div class="flashcard" id="6">
+                <div class="front">B-Roll</div>
+                <div class="back">Supplementary footage that is used to add visual interest, context, and flow to the story.</div>
+            </div></div>
+            <div class="selector"><div class="flashcard" id="7">
+                <div class="front">Pre-Production</div>
+                <div class="back">The phase before actual filming begins, including finalizing the script, hiring the crew, finding locations, and creating schedules.</div>
+            </div></div>
+            <div class="selector"><div class="flashcard" id="8">
+                <div class="front">Post-Production</div>
+                <div class="back">The phase of filmmaking and video production that occurs after filming is complete. It involves editing, adding sound, visual effects, and other enhancements to create the final, polished product.</div>
+            </div></div>
+            <div class="selector"><div class="flashcard" id="9">
+                <div class="front">Call Sheet</div>
+                <div class="back">A document used in film and television production that provides all the essential details about a day's shooting schedule, including location, cast call times, and contact information for the crew.</div>
+            </div></div>
+        </div>
+        <script>
+            document.querySelectorAll('.flashcard').forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.animation = "openAnimation 0.5s forwards";
+                    card.style.webkitAnimation = "openAnimation 0.5s forwards";
+                }, index * 300);
+            });
+            document.querySelectorAll('.flashcard').forEach((card) => {
+                card.addEventListener("animationend", function() {
+                    card.style.animation = "";
+                    card.style.visibility = "visible";
+                });
+            });
+        </script>
+    </body>
+</html>
