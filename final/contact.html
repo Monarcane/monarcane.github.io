@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | A.R.C</title>
+        <link rel="shortcut icon" href="images/logo.png" />
+        <link rel="stylesheet" type="text/css" href="final.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="socials">
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=kDMmlgCNA0X4DMpw"><h3>Youtube</h3></a>
+                <a href="https://top.gg/bot/966808394285584476"><h3>Discord</h3></a>
+                <a href="https://www.instagram.com/p/BgSlRglAKBn/?utm_source=ig_web_copy_link"><h3>Instagram</h3></a>
+                <a href="https://www.facebook.com/groups/1199210663926081/posts/1199670603880087/"><h3>Facebook</h3></a>
+            </div>
+            <div class="logo"><img src="images/arc.png" alt="A.R.C" height="25px"/></div>
+            <div class="pages">
+                <a href="index.html"><h3>Home</h3></a>
+                <div class="dropdown">
+                    <a href="members.html"><h3>Members</h3></a>
+                    <div class="connections"><a href="connections.html"><h3>Connections</h3></a></div>
+                </div>
+                <a href="portfolio.html"><h3>Collective Portfolio</h3></a>
+                <a href="contact.html"><h3>Contact</h3></a>
+                <a href="shop.html"><h3>Shop</h3></a>
+            </div>
+        </div>
+        <div class="hidden" id="popup">
+            <div class="popup">
+                <h1>Members</h1>
+                <ul>
+                    <li>Logan Klinedinst
+                        <ul>
+                            <li>The Monarcane. Creator of the A.R.C, Writer, Director, Illustrator.</li>
+                        </ul>
+                    </li><li>Ronan Luu
+                        <ul>
+                            <li>Founder of Spinofilms, Writer, Director, Actor.</li>
+                        </ul>
+                    </li><li>Derek Irwin
+                        <ul>
+                            <li>Photographer, Videographer, Actor. Creator of Railforce YouTube channel.</li>
+                        </ul>
+                    </li><li>Jared Kong
+                        <ul>
+                            <li>Actor, Musician.</li>
+                        </ul>
+                    </li><li>Gregory Timmons
+                        <ul>
+                            <li>Award-winning video editor, cameraman, and executive producer.</li>
+                        </ul>
+                    </li><li>Jezabeth Roca Gonzàlez
+                        <ul>
+                            <li>Multidisciplinary maker and educator.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <button onclick="memberListOff()"><h1>Close</h1></button>
+            </div>
+        </div>
+        <div class="page">
+            <div class="top">
+                <h2>Contact</h2>
+                <h3>Need to ask the A.R.C a question? Want to hire our members? You're in the right place.</h3>
+            </div>
+            <div class="email">
+                <h2>Send us an email.</h2>
+                <h3>Fill this form to talk to our team.</h3><br/>
+                <div class="form" id="form">
+                    <div class="question" id="small">
+                        <label for="email">What is your email?<br/></label>
+                        <input type="text" id="email" name="email" placeholder="example@email.com" size="45">
+                    </div>
+                    <div class="question" id="small">
+                        <label for="name">What is your name?<br/></label>
+                        <input type="text" id="name" name="name" placeholder="First Last" size="45">
+                    </div>
+                    <div class="question" id="big">
+                        <label>Why are you contacting the A.R.C?<br/></label>
+                        <div class="radio">
+                            <div><input class="radio" type="radio" id="hiring" name="reason" value="Hiring"><label for="hiring"> Hiring</label></div>
+                            <div><input class="radio" type="radio" id="question" name="reason" value="Question"><label for="question"> Question</label></div>
+                            <div><input class="radio" type="radio" id="suggestion" name="reason" value="Suggestion"><label for="suggestion"> Suggestion</label></div>
+                            <div><input class="radio" type="radio" id="complaint" name="reason" value="Complaint"><label for="complaint"> Complaint</label></div>
+                            <div><input class="radio" type="radio" id="other" name="reason" value="Other"><label for="other"> Other</label></div>
+                        </div>
+                    </div>
+                    <div class="question switch hiring hidden" id="small" >
+                        <label for="listhire">List which of our members you would like:  <button class="memberList" tabindex="0" onclick="memberListOn()"><i class='bx  bx-list-ul'></i></button><br/></label>
+                        <textarea id="listhire" name="listhire" placeholder="If you don't know, leave this blank. We will suggest some for you." rows="4" cols="45"></textarea>
+                    </div>
+                    <div class="question switch hiring hidden" id="small">
+                        <label for="name"><br/>Please provide your budget:<br/><br/></label>
+                        <input type="text" id="name" name="name" size="30">
+                    </div>
+                    <div class="question switch suggestion hidden" id="small" >
+                        <label for="listsugg">Who does your suggestion relate to?  <button class="memberList" tabindex="0" onclick="memberListOn()"><i class='bx  bx-list-ul'></i></button><br/></label>
+                        <textarea id="listsugg" name="listsugg" placeholder="List member(s)." rows="4" cols="45"></textarea>
+                    </div>
+                    <div class="question switch suggestion hidden" id="small">
+                        <label for="listeffect">Provide the type of suggestion:  <br/></label>
+                        <div class="radio">
+                            <div><input class="radio" type="radio" id="newMember" name="type" value="New Member"><label for="newMember"> New Member</label></div>
+                            <div><input class="radio" type="radio" id="creation" name="type" value="Creation"><label for="creation"> Creation</label></div>
+                            <div><input class="radio" type="radio" id="members" name="type" value="Members"><label for="members"> Members</label></div>
+                            <div><input class="radio" type="radio" id="organizational" name="type" value="Organizational"><label for="organizational"> Organizational</label></div>
+                            <div><input class="radio" type="radio" id="other" name="type" value="Other"><label for="other"> Other</label></div>
+                        </div>
+                    </div>
+                    <div class="question switch complaint hidden" id="small" >
+                        <label for="listcomp">Who does your complaint refer to?  <button class="memberList" tabindex="0" onclick="memberListOn()"><i class='bx  bx-list-ul'></i></button><br/></label>
+                        <textarea id="listcomp" name="listcomp" placeholder="List member(s)." rows="4" cols="45"></textarea>
+                    </div>
+                    <div class="question switch complaint hidden" id="small">
+                        <label for="listeffect">List everyone this effects.  <br/></label>
+                        <textarea id="listeffect" name="listeffect" placeholder="List people." rows="4" cols="45"></textarea>
+                    </div>
+                    <div class="question" id="big">
+                        <label>Expand on the details of your message:<br/></label>
+                        <textarea id="details" name="details" rows="10" cols="110"></textarea>
+                    </div>
+                    <button class="submit" tabindex="0" onclick="submit()">Send Email</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=kDMmlgCNA0X4DMpw"><h3>Youtube</h3></a>
+                <a href="https://top.gg/bot/966808394285584476"><h3>Discord</h3></a>
+                <a href="https://www.instagram.com/p/BgSlRglAKBn/?utm_source=ig_web_copy_link"><h3>Instagram</h3></a>
+                <a href="https://www.facebook.com/groups/1199210663926081/posts/1199670603880087/"><h3>Facebook</h3></a>
+                <a href="index.html"><h3>Home</h3></a>
+                <a href="members.html"><h3>Members</h3></a>
+                <a href="connections.html"><h3>Connections</h3></a>
+                <a href="portfolio.html"><h3>Collective Portfolio</h3></a>
+                <a href="contact.html"><h3>Contact</h3></a>
+                <a href="shop.html"><h3>Shop</h3></a>
+            </div>
+            <div>©2025 Artist Reverence Collective</div>
+        </div>
+        <script>
+            document.querySelectorAll('input[name="reason"]').forEach(radio => {
+                radio.addEventListener('change', function() {
+                    let form = document.getElementById('form');
+                    document.querySelectorAll('.switch').forEach(change => {
+                        change.classList.add('hidden');
+                    });
+
+                    switch (this.value) {
+                    case "Hiring":
+                        form.style.backgroundColor = "rgb(212, 255, 206)"
+                        document.querySelectorAll('.hiring').forEach(change => {
+                            change.classList.remove('hidden');
+                        });
+                        break;
+                    case "Question":
+                        form.style.backgroundColor = "rgb(255, 242, 206)"
+                        break;
+                    case "Suggestion":
+                        form.style.backgroundColor = "rgb(206, 223, 255)"
+                        document.querySelectorAll('.suggestion').forEach(change => {
+                            change.classList.remove('hidden');
+                        });
+                        break;
+                    case "Complaint":
+                        form.style.backgroundColor = "rgb(255, 206, 206)"
+                        document.querySelectorAll('.complaint').forEach(change => {
+                            change.classList.remove('hidden');
+                        });
+                        break;
+                    default:
+                        form.style.backgroundColor = "rgb(233, 206, 255)"
+                    }
+                });
+            });
+
+            function memberListOn() {
+                document.getElementById('popup').classList.remove('hidden');
+            }
+            function memberListOff() {
+                document.getElementById('popup').classList.add('hidden');
+            }
+
+            function submit() {
+                //insert email submission code
+                alert("Email Sent!");
+
+                location.reload();
+            }
+        </script>
+        <script src="final.js"></script>
+    </body>
+</html>
